@@ -1,0 +1,34 @@
+# Mysunat Islam - Biomedical AI Portfolio
+
+Professional portfolio for Mysunat Islam, focused on biomedical AI, bioinformatics, digital twins, biosignal analytics, and quantitative research workflows.
+
+Live portfolio: https://mysunatislam.github.io/Portfolio/
+
+## Profile
+
+I solve biomedical data problems by turning noisy research inputs into measurable evidence: candidate biomarkers, validated image-analysis pipelines, reflex simulations, and signal features that help teams make defensible decisions.
+
+Open to UAE/GCC remote roles, research collaborations, and biomedical AI projects.
+
+## Selected Impact
+
+| Project | Problem Solved | Quantified Impact |
+| --- | --- | --- |
+| PDAC biomarker discovery | Early pancreatic cancer detection needs more reliable, non-invasive biomarker candidates. | Integrated 5 datasets, narrowed 628 malignant-switch genes to 80 spatially validated genes, and built a 6 EV-miRNA panel with ROC AUC 0.935. |
+| Microscopy image AI | Fluorescence microscopy drug screens need consistent normalization and per-cell quantification. | Compared 5 normalization strategies and trained U-Net segmentation with Dice ~0.90, IoU ~0.82, precision ~0.91, and recall ~0.90. |
+| NeuroRoboTwin | Soft robotic hands need safer reflex behavior before physical actuator testing. | Modeled 4 reflex-control modes, targeted 20-50 ms biological latency, and reduced high-load inhibitory gain from 1.00 to ~0.78. |
+| ECG analytics | Raw ECG recordings need interpretable features for physiological-state comparison. | Converted recordings into 5 outputs: R-peaks, RR intervals, HRV, SDNN/RMSSD, and continuous wavelet maps. |
+| Drug delivery optimization | Nanoparticle carrier selection needs statistically defensible comparison. | Used 3x3 DOE, ANOVA, and Tukey validation; polymer delivery averaged +9.2 percentage points over Au-based delivery. |
+
+## Evidence Links
+
+- PDAC biomarker write-up: https://drive.google.com/file/d/1FgYi9u0JsDnnzEioZyqPxjtLJUvPYgOt/view
+- Microscopy image AI write-up: https://drive.google.com/file/d/1Ihcm8LKew4Q7tcuwgEHq5gCv87W78CU3/view
+- NeuroRoboTwin details: https://drive.google.com/file/d/1WxuuvTaSyuiirQxHsHLMrjP-h9e2Jbeq/view
+- Digital twin video: https://docs.google.com/videos/d/1BL4AFuGzg3DdBaBrT1LwTo-Ot32l654M3MR_a09J1-0/edit?usp=sharing
+
+## Contact
+
+- Email: mysunatislam@gmail.com
+- LinkedIn: https://www.linkedin.com/in/mysunat-islam-8742b3242/
+- GitHub: https://github.com/mysunatislam

@@ -1,0 +1,289 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Liquid glass & crystal optical filter -->
+    <filter id="liquid-caustic-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Original & Crystal Gradients -->
+    <linearGradient id="g-eli" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fb9db4"/><stop offset="1" stop-color="#f0567a"/></linearGradient>
+    <linearGradient id="g-atlas" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb9ff"/><stop offset="1" stop-color="#3a86ff"/></linearGradient>
+    <linearGradient id="g-aria" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3cd9f"/><stop offset="1" stop-color="#e0a96d"/></linearGradient>
+    <linearGradient id="g-zephyr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bd94f7"/><stop offset="1" stop-color="#8338ec"/></linearGradient>
+    <linearGradient id="g-mentor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ce8dd"/><stop offset="1" stop-color="#2ec4b6"/></linearGradient>
+
+    <!-- Multi-tier Caustic Gem Gradients -->
+    <radialGradient id="c-eli" cx="35%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="22%" stop-color="#ff9ab4"/>
+      <stop offset="65%" stop-color="#f0567a"/>
+      <stop offset="100%" stop-color="#b81d45"/>
+    </radialGradient>
+    <radialGradient id="c-atlas" cx="40%" cy="28%" r="68%">
+      <stop offset="0%" stop-color="#d6e7ff"/>
+      <stop offset="25%" stop-color="#73aaff"/>
+      <stop offset="65%" stop-color="#3a86ff"/>
+      <stop offset="100%" stop-color="#144ab8"/>
+    </radialGradient>
+    <radialGradient id="c-aria" cx="38%" cy="28%" r="68%">
+      <stop offset="0%" stop-color="#fff5e6"/>
+      <stop offset="25%" stop-color="#f7d4aa"/>
+      <stop offset="65%" stop-color="#e0a96d"/>
+      <stop offset="100%" stop-color="#a06020"/>
+    </radialGradient>
+    <radialGradient id="c-zephyr" cx="38%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#f0e2ff"/>
+      <stop offset="25%" stop-color="#cc9cfc"/>
+      <stop offset="65%" stop-color="#8338ec"/>
+      <stop offset="100%" stop-color="#4d129f"/>
+    </radialGradient>
+    <radialGradient id="c-mentor" cx="38%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#defcf8"/>
+      <stop offset="25%" stop-color="#7feee2"/>
+      <stop offset="65%" stop-color="#2ec4b6"/>
+      <stop offset="100%" stop-color="#116e66"/>
+    </radialGradient>
+
+    <!-- Specular Liquid Highlights -->
+    <linearGradient id="gloss-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 1. ELI CLASSIC (Feminine Personal Companion) -->
+    <symbol id="av-eli" viewBox="0 0 100 100">
+      <!-- Outer Heart Crystal Base -->
+      <path d="M50,87 C23,65 7,46 7,28 C7,13 20,4 34,7 C42,9 47,16 50,22 C53,16 58,9 66,7 C80,4 93,13 93,28 C93,46 77,65 50,87 Z" fill="url(#c-eli)"/>
+      <!-- Crystal Facet Lines -->
+      <path d="M50,22 L34,7 C20,4 7,13 7,28 C7,38 15,50 26,61 L50,87 L74,61 C85,50 93,38 93,28 C93,13 80,4 66,7 Z" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="0.8"/>
+      <path d="M50,22 L50,87 M26,61 L50,49 L74,61" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.75"/>
+      <!-- Liquid Glass Gloss Highlight -->
+      <ellipse cx="32" cy="24" rx="13" ry="7" fill="url(#gloss-top)" transform="rotate(-28 32 24)"/>
+      <ellipse cx="68" cy="22" rx="7" ry="4" fill="#ffffff" opacity="0.38" transform="rotate(22 68 22)"/>
+      <circle cx="20" cy="36" r="2.2" fill="#ffffff" opacity="0.6"/>
+
+      <!-- Left Eye: Sclera + Pupil + Catchlight Twinkles -->
+      <g class="eye eye-left">
+        <ellipse cx="36" cy="49" rx="6.8" ry="8.8" fill="#ffffff"/>
+        <ellipse cx="36" cy="49" rx="6.8" ry="8.8" fill="none" stroke="rgba(184,29,69,0.22)" stroke-width="0.8"/>
+        <ellipse class="eli-pupil" cx="36.5" cy="49" rx="4.8" ry="5.8" fill="#1b1222">
+          <animate attributeName="ry" values="5.8;5.8;0.8;5.8" keyTimes="0;0.92;0.95;1" dur="4.2s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="34.8" cy="46.8" r="1.8" fill="#ffffff"/>
+        <circle cx="38.2" cy="51.2" r="0.9" fill="#ffffff" opacity="0.9"/>
+      </g>
+
+      <!-- Right Eye: Sclera + Pupil + Catchlight Twinkles -->
+      <g class="eye eye-right">
+        <ellipse cx="64" cy="49" rx="6.8" ry="8.8" fill="#ffffff"/>
+        <ellipse cx="64" cy="49" rx="6.8" ry="8.8" fill="none" stroke="rgba(184,29,69,0.22)" stroke-width="0.8"/>
+        <ellipse class="eli-pupil" cx="64.5" cy="49" rx="4.8" ry="5.8" fill="#1b1222">
+          <animate attributeName="ry" values="5.8;5.8;0.8;5.8" keyTimes="0;0.92;0.95;1" dur="4.2s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="62.8" cy="46.8" r="1.8" fill="#ffffff"/>
+        <circle cx="66.2" cy="51.2" r="0.9" fill="#ffffff" opacity="0.9"/>
+      </g>
+
+      <!-- Rosy Blush Cheeks -->
+      <ellipse cx="25" cy="58" rx="5.5" ry="3" fill="#ff4d79" opacity="0.55"/>
+      <ellipse cx="75" cy="58" rx="5.5" ry="3" fill="#ff4d79" opacity="0.55"/>
+
+      <!-- Sweet Happy Open Smile -->
+      <path class="eli-mouth" d="M42,60 Q50,71 58,60" stroke="#1b1222" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- 2. ATLAS (Masculine Tech Lead & Architecture) -->
+    <symbol id="av-atlas" viewBox="0 0 100 100">
+      <!-- High-Tech Shield Base -->
+      <path d="M50,6 L88,18 C88,48 76,76 50,94 C24,76 12,48 12,18 Z" fill="url(#c-atlas)"/>
+      <!-- Crystal Shield Bevel Facets -->
+      <path d="M50,6 L88,18 L50,94 L12,18 Z" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="0.8"/>
+      <path d="M50,6 L50,94" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+      <path d="M12,18 L88,18 M23,38 L77,38 M36,64 L64,64" stroke="rgba(255,255,255,0.14)" stroke-width="0.75" stroke-dasharray="2 3"/>
+      <!-- Liquid Glass Sheen -->
+      <ellipse cx="35" cy="24" rx="14" ry="7" fill="url(#gloss-top)" transform="rotate(-18 35 24)"/>
+      <!-- Cyber Nodes in Top-Right Corner -->
+      <circle cx="76" cy="26" r="1.8" fill="#ffffff" opacity="0.6"/>
+      <circle cx="82" cy="19" r="2.4" fill="#ffffff" opacity="0.85"/>
+      <circle cx="88" cy="12" r="1.5" fill="#ffffff" opacity="0.5"/>
+      <line x1="76" y1="26" x2="82" y2="19" stroke="#ffffff" stroke-width="0.8" opacity="0.5"/>
+
+      <!-- Confident Angled Eyebrows -->
+      <path d="M29,38 Q37,33.5 45,37" stroke="#0a1a36" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M55,37 Q63,33.5 71,38" stroke="#0a1a36" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Left Eye -->
+      <g class="eye eye-left">
+        <ellipse cx="37" cy="50" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="37" cy="50" rx="6.5" ry="8" fill="none" stroke="rgba(20,74,184,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="38" cy="50" rx="4.8" ry="5.5" fill="#0a1a36">
+          <animate attributeName="ry" values="5.5;5.5;0.8;5.5" keyTimes="0;0.93;0.96;1" dur="4.6s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="36.2" cy="48" r="1.8" fill="#ffffff"/>
+      </g>
+
+      <!-- Right Eye -->
+      <g class="eye eye-right">
+        <ellipse cx="63" cy="50" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="63" cy="50" rx="6.5" ry="8" fill="none" stroke="rgba(20,74,184,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="62" cy="50" rx="4.8" ry="5.5" fill="#0a1a36">
+          <animate attributeName="ry" values="5.5;5.5;0.8;5.5" keyTimes="0;0.93;0.96;1" dur="4.6s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="64" cy="48" r="1.8" fill="#ffffff"/>
+      </g>
+
+      <!-- Confident Determined Smirk -->
+      <path class="eli-mouth" d="M42,65 Q50,68 59,64" stroke="#0a1a36" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- 3. ARIA (Refined Feminine Hospitality Concierge) -->
+    <symbol id="av-aria" viewBox="0 0 100 100">
+      <!-- Regal Lotus Crest / Crown Silhouette -->
+      <path d="M50,7 C64,15 78,9 88,23 C90,52 76,77 50,94 C24,77 10,52 12,23 C22,9 36,15 50,7 Z" fill="url(#c-aria)"/>
+      <!-- Filigree Facets & Crown Sparkle -->
+      <path d="M50,7 L50,94" stroke="rgba(255,255,255,0.22)" stroke-width="0.75"/>
+      <path d="M50,22 C60,28 72,24 80,32" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
+      <path d="M50,22 C40,28 28,24 20,32" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
+      <polygon points="50,15 52.5,20 57,20.5 53.5,23.5 54.5,28 50,25.5 45.5,28 46.5,23.5 43,20.5 47.5,20" fill="#ffffff" opacity="0.8"/>
+      <!-- Liquid Glass Sheen -->
+      <ellipse cx="34" cy="26" rx="12" ry="6" fill="url(#gloss-top)" transform="rotate(-20 34 26)"/>
+
+      <!-- Graceful Arched Brows -->
+      <path d="M30,39 Q37,33.5 45,38" stroke="#331f0c" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M55,38 Q63,33.5 70,39" stroke="#331f0c" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+      <!-- Left Eye (Fixed: Was missing in previous broken SVG) -->
+      <g class="eye eye-left">
+        <ellipse cx="37" cy="50" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="37" cy="50" rx="6.5" ry="8" fill="none" stroke="rgba(160,96,32,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="37.5" cy="50" rx="4.6" ry="5.5" fill="#2d1a08">
+          <animate attributeName="ry" values="5.5;5.5;0.7;5.5" keyTimes="0;0.91;0.945;1" dur="4.8s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="35.8" cy="48" r="1.7" fill="#ffffff"/>
+        <circle cx="39" cy="51.8" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Right Eye (Fixed: Was missing in previous broken SVG) -->
+      <g class="eye eye-right">
+        <ellipse cx="63" cy="50" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="63" cy="50" rx="6.5" ry="8" fill="none" stroke="rgba(160,96,32,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="62.5" cy="50" rx="4.6" ry="5.5" fill="#2d1a08">
+          <animate attributeName="ry" values="5.5;5.5;0.7;5.5" keyTimes="0;0.91;0.945;1" dur="4.8s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="61.2" cy="48" r="1.7" fill="#ffffff"/>
+        <circle cx="64.5" cy="51.8" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Subtle Warm Terracotta/Apricot Blush -->
+      <ellipse cx="26" cy="58" rx="5" ry="2.8" fill="#d98236" opacity="0.45"/>
+      <ellipse cx="74" cy="58" rx="5" ry="2.8" fill="#d98236" opacity="0.45"/>
+
+      <!-- Warm Gracious Welcoming Smile -->
+      <path class="eli-mouth" d="M41,61 Q50,71 59,61" stroke="#2d1a08" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- 4. ZEPHYR (Female Dynamic Event Producer & Operations) -->
+    <symbol id="av-zephyr" viewBox="0 0 100 100">
+      <!-- Cosmic Spark / 4-Point Star Silhouette -->
+      <path d="M50,4 C54,26 62,38 96,50 C62,62 54,74 50,96 C46,74 38,62 4,50 C38,38 46,26 50,4 Z" fill="url(#c-zephyr)"/>
+      <!-- Star Facets & Diamond Geometry -->
+      <path d="M50,4 L50,96 M4,50 L96,50" stroke="rgba(255,255,255,0.32)" stroke-width="0.8"/>
+      <path d="M50,22 L78,50 L50,78 L22,50 Z" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+      <!-- Liquid Glass Sheen -->
+      <ellipse cx="36" cy="30" rx="10" ry="5.5" fill="url(#gloss-top)" transform="rotate(-25 36 30)"/>
+      <!-- Dynamic Orbiting Sparkle Star -->
+      <path d="M76,28 L77.5,33 L82,34.5 L77.5,36 L76,41 L74.5,36 L70,34.5 L74.5,33 Z" fill="#ffffff" opacity="0.9">
+        <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="24" cy="26" r="2.2" fill="#ffffff" opacity="0.75"/>
+
+      <!-- Energetic Eyebrows -->
+      <path d="M30,38 Q37,33 44,37" stroke="#1d0a33" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M56,36 Q63,31 70,36" stroke="#1d0a33" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+      <!-- Left Eye -->
+      <g class="eye eye-left">
+        <ellipse cx="37" cy="49" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="37" cy="49" rx="6.5" ry="8" fill="none" stroke="rgba(77,18,159,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="37.5" cy="49" rx="4.8" ry="5.6" fill="#1d0a33">
+          <animate attributeName="ry" values="5.6;5.6;0.8;5.6" keyTimes="0;0.9;0.94;1" dur="4.4s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="35.8" cy="47" r="1.8" fill="#ffffff"/>
+        <circle cx="39" cy="51" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Right Eye (Fixed: Was missing in previous broken SVG) -->
+      <g class="eye eye-right">
+        <ellipse cx="63" cy="49" rx="6.5" ry="8" fill="#ffffff"/>
+        <ellipse cx="63" cy="49" rx="6.5" ry="8" fill="none" stroke="rgba(77,18,159,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="62.5" cy="49" rx="4.8" ry="5.6" fill="#1d0a33">
+          <animate attributeName="ry" values="5.6;5.6;0.8;5.6" keyTimes="0;0.9;0.94;1" dur="4.4s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="61.2" cy="47" r="1.8" fill="#ffffff"/>
+        <circle cx="64.5" cy="51" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Magenta Cheek Blush -->
+      <ellipse cx="27" cy="57" rx="4.8" ry="2.6" fill="#e040fb" opacity="0.5"/>
+      <ellipse cx="73" cy="57" rx="4.8" ry="2.6" fill="#e040fb" opacity="0.5"/>
+
+      <!-- High-Energy Bright Smile -->
+      <path class="eli-mouth" d="M40,59 Q50,71 60,59" stroke="#1d0a33" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- 5. MENTOR (Instructional Guide & Procedural Tutor) -->
+    <symbol id="av-mentor" viewBox="0 0 100 100">
+      <!-- Compass Sphere Base -->
+      <circle cx="50" cy="50" r="46" fill="url(#c-mentor)"/>
+      <!-- Precision Calibration Dial Ticks (N, S, E, W & 30-deg marks) -->
+      <circle cx="50" cy="50" r="41" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="0.8"/>
+      <!-- Cardinal Tick Marks -->
+      <line x1="50" y1="5" x2="50" y2="12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="50" y1="88" x2="50" y2="95" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="5" y1="50" x2="12" y2="50" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="88" y1="50" x2="95" y2="50" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <!-- Diagonal angle ticks -->
+      <line x1="22" y1="22" x2="26" y2="26" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="78" y1="22" x2="74" y2="26" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="22" y1="78" x2="26" y2="74" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="78" y1="78" x2="74" y2="74" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- Liquid Glass Gloss Highlight -->
+      <ellipse cx="34" cy="26" rx="14" ry="7" fill="url(#gloss-top)" transform="rotate(-25 34 26)"/>
+
+      <!-- Wise Calm Brows -->
+      <path d="M30,37 Q37,32 44,36" stroke="#092824" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M56,36 Q63,32 70,37" stroke="#092824" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+      <!-- Left Eye (Fixed: Was plain dark dot) -->
+      <g class="eye eye-left">
+        <ellipse cx="37" cy="49" rx="6.5" ry="8.2" fill="#ffffff"/>
+        <ellipse cx="37" cy="49" rx="6.5" ry="8.2" fill="none" stroke="rgba(17,110,102,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="37.5" cy="49" rx="4.8" ry="5.8" fill="#092824">
+          <animate attributeName="ry" values="5.8;5.8;0.8;5.8" keyTimes="0;0.92;0.955;1" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="35.8" cy="47" r="1.8" fill="#ffffff"/>
+        <circle cx="39" cy="51.2" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Right Eye (Fixed: Was plain dark dot) -->
+      <g class="eye eye-right">
+        <ellipse cx="63" cy="49" rx="6.5" ry="8.2" fill="#ffffff"/>
+        <ellipse cx="63" cy="49" rx="6.5" ry="8.2" fill="none" stroke="rgba(17,110,102,0.3)" stroke-width="0.75"/>
+        <ellipse class="eli-pupil" cx="62.5" cy="49" rx="4.8" ry="5.8" fill="#092824">
+          <animate attributeName="ry" values="5.8;5.8;0.8;5.8" keyTimes="0;0.92;0.955;1" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="61.2" cy="47" r="1.8" fill="#ffffff"/>
+        <circle cx="64.5" cy="51.2" r="0.8" fill="#ffffff" opacity="0.8"/>
+      </g>
+
+      <!-- Calming Soft Cyan Blush -->
+      <ellipse cx="26" cy="58" rx="5" ry="2.6" fill="#14b8a6" opacity="0.45"/>
+      <ellipse cx="74" cy="58" rx="5" ry="2.6" fill="#14b8a6" opacity="0.45"/>
+
+      <!-- Patient Reassuring Pedagogical Smile -->
+      <path class="eli-mouth" d="M39,61 Q50,72 61,61" stroke="#092824" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
